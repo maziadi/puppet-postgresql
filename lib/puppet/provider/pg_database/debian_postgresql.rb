@@ -9,6 +9,7 @@ Puppet::Type.type(:pg_database).provide(:debian_postgresql) do
 
   def create
     su("-", "postgres", "-c", "createdb -T template0 -E %s -l %s -O %s %s" % [ @resource.value(:encoding), @resource.value(:locale), @resource.value(:owner), @resource.value(:name) ])
+
   end
 
   def destroy
