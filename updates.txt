@@ -1,1 +1,2 @@
-this file describes the updates made for the puppet-postgresql module
+New feature :
+Adding the ability of filling the tables of a database once this database and his associated user are created. 
